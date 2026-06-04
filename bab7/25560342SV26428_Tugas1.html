@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        z-index: 10;
+      }
+
+      .navbar .menu a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+      }
+
+      .profile-card {
+        position: relative;
+        width: 280px;
+        height: 350px;
+        background-color: #f4f4f4;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .status-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: green;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 20;
+      }
+
+      .back-to-top:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">My Website</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <div class="profile-card">
+      <div class="status-badge">Online 🟢</div>
+
+      <h2>John Doe</h2>
+      <p>Web Developer</p>
+    </div>
+
+    <button class="back-to-top">Back to Top</button>
+  </body>
+</html>

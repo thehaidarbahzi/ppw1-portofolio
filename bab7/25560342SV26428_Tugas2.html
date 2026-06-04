@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        padding: 10px;
+        color: white;
+      }
+
+      .navbar .menu a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero img {
+        flex: 1;
+      }
+
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card {
+        flex: 1 1 calc(33% - 20px);
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      .footer div {
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+        }
+
+        .card-grid {
+          flex-direction: column;
+        }
+
+        .footer {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to My Site</h1>
+        <p>Discover amazing products and services</p>
+      </div>
+      <img src="image.png" alt="Hero Image" />
+    </section>
+
+    <section class="card-grid">
+      <div class="card">
+        <h3>Product 1</h3>
+        <p>Description of product 1.</p>
+      </div>
+      <div class="card">
+        <h3>Product 2</h3>
+        <p>Description of product 2.</p>
+      </div>
+      <div class="card">
+        <h3>Product 3</h3>
+        <p>Description of product 3.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>About</div>
+      <div>Contact</div>
+      <div>Social Media</div>
+    </footer>
+  </body>
+</html>
