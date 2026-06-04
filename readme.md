@@ -3,7 +3,6 @@
 
 | Nomor Bab | Judul Bab | Screenshot |
 | --- | --- | --- |
-| Bab 2 | Dasar-dasar HTML | ![Alt text](screenshot/bab2.png) |
 | Bab 4 | Form dan Graphic | ![Alt text](screenshot/bab4.png) |
 | Bab 5 | Stylesheet | ![Alt text](screenshot/bab5.png) |
 | Bab 6 | Responsive Web Design | ![Alt text](screenshot/bab6.png) |
