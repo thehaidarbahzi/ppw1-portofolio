@@ -1,0 +1,103 @@
+:root {
+    --bg-dark: #1E293B;
+    --cyan-accent: #8DF0CD;
+    --card-text-bg: #E7E8EB;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.custom-navbar {
+    transition: background-color 0.3s ease;
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.custom-img {
+    max-height: 450px;
+    object-fit: contain;
+}
+
+.btn-cyan {
+    background-color: var(--cyan-accent);
+    color: #000;
+    border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s;
+}
+.btn-cyan:hover {
+    background-color: #79ddbb;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(141, 240, 205, 0.3);
+}
+
+.amogusimg {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.bg-light-custom {
+    background-color: var(--card-text-bg);
+}
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.custom-card .card-text {
+    color: #333;
+    word-wrap: break-word;
+}
+
+.social-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--cyan-accent) !important;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .custom-img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1140px;
+    }
+}
