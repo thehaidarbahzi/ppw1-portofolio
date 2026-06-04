@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 220, 150);
+    </script>
+  </body>
+</html>

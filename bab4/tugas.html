@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Event Registration</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f1f3f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: #ffffff;
+        padding: 40px;
+        width: 400px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 25px;
+        font-weight: 500;
+        color: #202124;
+      }
+
+      img.header {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 14px;
+        color: #5f6368;
+        display: block;
+        text-align: left;
+        margin-bottom: 6px;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        transition: 0.2s;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        border: 2px solid #1a73e8;
+      }
+
+      .radio-group {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+
+      .radio-group label {
+        display: inline;
+        margin-left: 6px;
+        color: #202124;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #1a73e8;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #1669c1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="header-banner.png" alt="Registration Header" class="header" />
+
+      <h2>Member Registration</h2>
+
+      <form action="/submit_form.php" method="post">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name"
+          required
+          autofocus
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@mail.com"
+          required
+        />
+
+        <div class="radio-group">
+          <label>Membership Type</label><br />
+          <input type="radio" id="basic" name="member" value="basic" />
+          <label for="basic">Basic</label><br />
+
+          <input type="radio" id="premium" name="member" value="premium" />
+          <label for="premium">Premium</label>
+        </div>
+
+        <input type="submit" value="Register Now" />
+      </form>
+    </div>
+  </body>
+</html>

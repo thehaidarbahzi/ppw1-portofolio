@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contoh Fieldset, Legend, Datalist, Output</title>
+  </head>
+  <body>
+    <h2>Formulir Pendaftaran</h2>
+
+    <form
+      oninput="hasil.value = parseInt(angka1.value) + parseInt(angka2.value)"
+    >
+      <fieldset>
+        <legend>Data Pribadi</legend>
+
+        <label>Nama:</label>
+        <input type="text" name="nama" /><br /><br />
+
+        <label>Email:</label>
+        <input type="email" name="email" /><br /><br />
+      </fieldset>
+
+      <br />
+
+      <label>Pilih Kota:</label>
+      <input list="daftarKota" name="kota" />
+
+      <datalist id="daftarKota">
+        <option value="Jakarta"></option>
+        <option value="Bandung"></option>
+        <option value="Surabaya"></option>
+        <option value="Yogyakarta"></option>
+      </datalist>
+
+      <br /><br />
+
+      <label>Pilih Jurusan:</label>
+      <select>
+        <optgroup label="Teknologi">
+          <option value="ti">Teknik Informatika</option>
+          <option value="si">Sistem Informasi</option>
+        </optgroup>
+        <optgroup label="Bisnis">
+          <option value="ak">Akuntansi</option>
+          <option value="mn">Manajemen</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+
+      <label>Angka 1:</label>
+      <input type="number" id="angka1" value="0" />
+
+      <label>Angka 2:</label>
+      <input type="number" id="angka2" value="0" />
+
+      Hasil: <output name="hasil">0</output>
+
+      <br /><br />
+      <button type="submit">Kirim</button>
+    </form>
+  </body>
+</html>
