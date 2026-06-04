@@ -1,0 +1,76 @@
+<!-- . Penulisan JavaScript & Output
+Buat 1 file HTML yang menggabungkan ketiga cara penulisan JavaScript:
+- embed, inline, dan eksternal. Setiap cara harus menghasilkan output yang
+- berbeda di halaman menggunakan keempat metode output (console.log,
+alert,
+- document.write, innerHTML). Sertakan komentar kode untuk setiap bagian.
+2. Form Pendataan Praktikan dengan Operator
+Gunakan confirm() untuk menanyakan: "Apakah Anda mahasiswa PPW1?"
+- Jika YA: gunakan prompt() untuk meminta Nama, NIM, dan Angkatan.
+Tampilkan data dalam tabel Bootstrap. Hitung dan tampilkan juga:
+- berapa tahun lagi lulus (asumsi 4 tahun dari angkatan), dan
+- apakah NIM bernilai genap atau ganjil (gunakan operator %).
+- Jika TIDAK: tampilkan pesan penolakan yang kreatif. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script>
+      console.log("saya tampil di console!");
+    </script>
+  </head>
+  <body id="root">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nama</th>
+          <th scope="col">NIU</th>
+          <th scope="col">Angkatan</th>
+          <th scope="col">Kapan lulus</th>
+          <th scope="col">Genap/Ganjil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="nama"></td>
+          <td id="nim"></td>
+          <td id="angkatan"></td>
+          <td id="lulus"></td>
+          <td id="gatau"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ketika website ke load javascript akan print sebuah pesan di console browser dengan command console.log -->
+    <h1>Output console.log (cek di inspect lalu tab console)</h1>
+
+    <!-- button alert javascript inline dengan onclick lalu command alert yang menampilkan pesan -->
+    <h1>Output alert (pencet tombol dibawah)</h1>
+    <button onclick="alert('saya tampil di alert')" type="button">
+      Klik me!
+    </button>
+
+    <!-- innerHTML memodifikasi elemen dengan id osas dan mengisinya dengan sebuah pesan -->
+    <h1>Output innerHTML</h1>
+    <p id="osas"></p>
+
+    <!-- document.write membuat elemen baru dengan pesan yang diinginkan -->
+    <h1>Output document.write</h1>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
