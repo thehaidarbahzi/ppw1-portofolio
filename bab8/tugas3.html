@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Nilai</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="card mb-4 p-3 d-flex flex-row align-items-center">
+        <img src="https://via.placeholder.com/80" class="rounded-circle me-3" />
+        <div>
+          <h5>Nama Mahasiswa</h5>
+          <span class="badge bg-success">Aktif</span>
+        </div>
+      </div>
+
+      <div class="row text-center mb-4">
+        <div class="col-md-4">
+          <div class="card p-3">📘 Total SKS<br /><strong>120</strong></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">⭐ IPK<br /><strong>3.75</strong></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">🎓 Lulus<br /><strong>40 MK</strong></div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Mata Kuliah</th>
+              <th>SKS</th>
+              <th>Nilai</th>
+              <th>Angka</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Pemrograman Web</td>
+              <td>3</td>
+              <td><span class="badge bg-success">A</span></td>
+              <td>4.0</td>
+              <td>
+                <button
+                  class="btn btn-info btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  Detail
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Basis Data</td>
+              <td>3</td>
+              <td><span class="badge bg-primary">B</span></td>
+              <td>3.0</td>
+              <td>
+                <button
+                  class="btn btn-info btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  Detail
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Detail Mata Kuliah</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">Informasi lengkap mata kuliah.</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
